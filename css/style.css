@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url("http://media.comicbook.com/2016/04/redblue-180787.png");
+  background: url("/res/img/background.png");
   font-family: "Pokemon Font", "Lucida Console";
 }
 
@@ -72,6 +72,43 @@ button {
 
 .show {
   display: block;
+}
+
+.current {
+  display: inline-block;
+}
+
+#current-text {
+  display: inline-block;
+  overflow: hidden;
+  letter-spacing: 2px;
+  animation: typing 2.5s steps(30, end), blink 0.75s step-end infinite;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 700;
+  border-right: 4px solid black;
+  box-sizing: border-box;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
 }
 
 table {
