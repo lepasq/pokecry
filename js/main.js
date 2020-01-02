@@ -15,7 +15,12 @@ function randomCry() {
   audio.play();
 }
 
-function selectBattle(bt) {}
+var battle = "Battle (vs Trainer)";
+
+function selectBattle(bt) {
+  battle = bt;
+  console.log(battle + " was selected!");
+}
 
 function battleTheme() {}
 
