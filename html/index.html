@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -27,7 +26,22 @@
         <div class="button">
             <div class="br1">
                 <button onclick="randomCry();">Random Cry</button>
-                <button>Second button</button>
+                <button onclick="battleTheme();">Battle Theme</button>
+            </div>
+            <div class="dropdown">
+                <button onclick="myDrop()" class="dropbtn">Choose Battle Theme</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <p onclick="selectBattle('Battle (vs Wild Pokemon)')" id="wild">Battle (vs Wild Pokemon)</p>
+                    <p onclick="selectBattle('Battle (vs Trainer)')" id="trainer">Battle (vs Trainer)</p>
+                    <p onclick="selectBattle('Battle (vs Gym Leader)')" id="gym">Battle (vs Gym Leader)</p>
+                    <p onclick="selectBattle('Last Battle (vs Rival)')" id="rival">Last Battle (vs Rival)</p>
+                </div>
+            </div>
+            <div class="current">
+
+                <p id="current-text">
+                    Battle (vs Trainer)
+                </p>
             </div>
         </div>
     </div>

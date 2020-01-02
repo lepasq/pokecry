@@ -13,7 +13,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 440px;
-  height: 300px;
+  height: 360px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   text-align: center;
@@ -33,6 +33,45 @@ button {
   font-family: "Pokemon Font", "Lucida Console";
   font-size: 12px;
   height: 20px;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: grey;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-height: 100px;
+}
+
+.dropdown-content p {
+  color: black;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown p:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
 }
 
 table {
