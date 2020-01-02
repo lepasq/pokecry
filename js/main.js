@@ -15,14 +15,27 @@ function randomCry() {
   audio.play();
 }
 
+// if no battle theme is selected, this is the standard battle theme
 var battle = "Battle (vs Trainer)";
+var myAudio = "";
+var path = "";
 
 function selectBattle(bt) {
   battle = bt;
   console.log(battle + " was selected!");
 }
 
-function battleTheme() {}
+function battleTheme() {
+  if (myAudio == "" || path != "/res/themes/" + battle + ".mp3") {
+    path = "/res/themes/" + battle + ".mp3";
+    myAudio = new Audio("/res/themes/" + battle + ".mp3");
+    myAudio.volume = 0.1;
+    console.log("started");
+    myAudio.play();
+  } else {
+    return myAudio.paused ? myAudio.play() : myAudio.pause();
+  }
+}
 
 function myDrop() {
   document.getElementById("myDropdown").classList.toggle("show");
