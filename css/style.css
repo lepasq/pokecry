@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Pokemon Font";
+  src: url("/pokemonfont.ttf");
+}
+
+body {
+  background: url("http://media.comicbook.com/2016/04/redblue-180787.png");
+  font-family: "Pokemon Font", "Lucida Console";
+}
+
+.header {
+  margin-top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 440px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.h2 {
+  font-size: 25px;
+  line-height: 200%;
+}
+
+.br1 {
+  margin-top: 20px;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Pokemon Font", "Lucida Console";
+  font-size: 12px;
+  height: 20px;
+}
+
+table {
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+td img {
+  cursor: pointer;
+}
+
+.footer {
+  clear: both;
+  padding: auto;
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
