@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Pokemon Font";
-  src: url("/pokemonfont.ttf");
+  src: url("../pokemonfont.ttf");
 }
 
 body {
-  background: url("/res/img/background.png");
+  background: url("../res/img/background.png");
   font-family: "Pokemon Font", "Lucida Console";
 }
 
